@@ -7,7 +7,7 @@ class ContaCorrente:
 
     def sacar(self, valor):
         if valor > self.saldo:
-            print(f"R$ {valor} é um valor inválido!")
+            print(f" Saque de R$ {valor} não foi possível, saldo insuficiente!")
         else:
             print(f"Você sacou R$ {valor}.")
             self.saldo = self.saldo - valor
